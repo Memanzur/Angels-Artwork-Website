@@ -107,13 +107,18 @@
     var lbCaption = lightbox.querySelector('.lightbox-caption');
     var lbClose = lightbox.querySelector('.lightbox-close');
 
+    var lbBuy = lightbox.querySelector('.lightbox-buy');
+
     document.querySelectorAll('.art-card-img').forEach(function (el) {
       el.addEventListener('click', function () {
+        var card = el.closest('.art-card');
         var img = el.querySelector('img');
-        var title = el.closest('.art-card').querySelector('h3');
+        var title = card.querySelector('h3');
+        var buyLink = card.querySelector('.btn-small');
         lbImg.src = img.src;
         lbImg.alt = img.alt;
         lbCaption.textContent = title ? title.textContent : '';
+        if (buyLink && lbBuy) lbBuy.href = buyLink.href;
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
       });
