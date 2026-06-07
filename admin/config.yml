@@ -2,6 +2,7 @@ backend:
   name: github
   repo: Memanzur/Angels-Artwork-Website
   branch: main
+  auth_type: pkce
 
 media_folder: "images"
 public_folder: "/images"
