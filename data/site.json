@@ -1,0 +1,24 @@
+{
+  "hero_whisper": "art touched by grace",
+  "hero_title": "Angel's Artwork",
+  "hero_subtitle": "Original works by Kerri Guthrie",
+  "shop_url": "https://kerris-art-kreations.square.site/",
+  "featured": {
+    "title": "Closer to Heaven",
+    "description": "A Joyous Reunion - one of Kerri's most beloved works, depicting the heavenly welcome that awaits. Available as a high-quality print.",
+    "image": "/images/spirit/closer-to-heaven-joyous-reunion.jpg",
+    "purchase_url": "https://kerris-art-kreations.square.site/#8a1da8b0-5bef-11ea-8cd7-8fb0fdeb0af2"
+  },
+  "about": {
+    "name": "Kerri Guthrie",
+    "bio_1": "Kerri Guthrie is an inspired artist and devoted mother. Her passion and vision is evident in her work. Each piece carries a sense of grace, capturing moments that feel both heavenly and deeply personal.",
+    "bio_2": "Based in South Jordan, Utah, Kerri creates original angel-themed artwork that brings comfort, beauty, and a touch of the divine into everyday spaces.",
+    "image": "/images/angels/ministry-of-angels-brunette-girl.jpg"
+  },
+  "contact": {
+    "address": "8822 South Redwood Road, South Jordan, UT 84088",
+    "hours": "Monday - Friday: 9am - 5pm, Saturday & Sunday: Closed",
+    "facebook_url": "https://www.facebook.com/Kerri-Guthrie-524514074347468",
+    "email": "kerrikreations@gmail.com"
+  }
+}

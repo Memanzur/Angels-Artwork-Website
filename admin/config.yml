@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: Memanzur/Angels-Artwork-Website
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "site"
+        label: "Site Info"
+        file: "data/site.json"
+        fields:
+          - { name: "hero_whisper", label: "Hero Tagline", widget: "string", default: "art touched by grace" }
+          - { name: "hero_title", label: "Hero Title", widget: "string", default: "Angel's Artwork" }
+          - { name: "hero_subtitle", label: "Hero Subtitle", widget: "string", default: "Original works by Kerri Guthrie" }
+          - { name: "shop_url", label: "Square Shop URL", widget: "string" }
+          - name: "featured"
+            label: "Featured Piece"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "purchase_url", label: "Purchase URL", widget: "string" }
+          - name: "about"
+            label: "About Section"
+            widget: "object"
+            fields:
+              - { name: "name", label: "Artist Name", widget: "string" }
+              - { name: "bio_1", label: "Bio Paragraph 1", widget: "text" }
+              - { name: "bio_2", label: "Bio Paragraph 2", widget: "text" }
+              - { name: "image", label: "About Image", widget: "image" }
+          - name: "contact"
+            label: "Contact Info"
+            widget: "object"
+            fields:
+              - { name: "address", label: "Address", widget: "string" }
+              - { name: "hours", label: "Hours", widget: "string" }
+              - { name: "facebook_url", label: "Facebook URL", widget: "string" }
+              - { name: "email", label: "Contact Form Email", widget: "string" }
+
+      - name: "artworks"
+        label: "Artworks"
+        file: "data/artworks.json"
+        fields:
+          - name: "pieces"
+            label: "Art Pieces"
+            widget: "list"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "category", label: "Category", widget: "select", options: ["angels", "spirit", "bookmarks"] }
+              - { name: "purchase_url", label: "Purchase URL", widget: "string" }
