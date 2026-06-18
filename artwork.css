@@ -1,0 +1,283 @@
+/* ── Artwork Detail Pages ──────────────────────────────────── */
+
+.breadcrumb {
+  padding: 100px 24px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: '/';
+  margin-left: 8px;
+  color: var(--lavender);
+}
+
+.breadcrumb a {
+  color: var(--lavender-deep);
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: var(--gold);
+}
+
+.artwork-detail {
+  padding: 40px 0 80px;
+}
+
+.artwork-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.artwork-image img {
+  border-radius: 16px;
+  box-shadow: 0 16px 60px rgba(139,111,163,0.15);
+  width: 100%;
+}
+
+.artwork-info h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: var(--lavender-deep);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.artwork-desc {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.artwork-info h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--lavender-deep);
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+
+.artwork-info p {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.artwork-details {
+  margin: 24px 0;
+  border-top: 1px solid rgba(196,177,212,0.2);
+  border-bottom: 1px solid rgba(196,177,212,0.2);
+  padding: 16px 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 0.9rem;
+}
+
+.detail-row strong {
+  color: var(--lavender-deep);
+  font-weight: 500;
+}
+
+.detail-row span {
+  color: var(--text-light);
+}
+
+.detail-row a {
+  color: var(--lavender-deep);
+  border-bottom: 1px solid var(--lavender);
+}
+
+.detail-row a:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.artwork-info .btn {
+  margin-right: 12px;
+  margin-top: 8px;
+}
+
+/* ── FAQ on artwork pages ────────────────────────────────── */
+
+.artwork-faq {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(196,177,212,0.15);
+}
+
+.artwork-faq h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  color: var(--lavender-deep);
+  margin-bottom: 20px;
+}
+
+/* ── Related Works ───────────────────────────────────────── */
+
+.related-works {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(196,177,212,0.15);
+}
+
+.related-works h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  color: var(--lavender-deep);
+  margin-bottom: 24px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.related-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid rgba(196,177,212,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.related-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(139,111,163,0.12);
+}
+
+.related-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.related-card span {
+  display: block;
+  padding: 12px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--lavender-deep);
+}
+
+/* ── Collection Pages ────────────────────────────────────── */
+
+.collection-hero {
+  padding: 120px 24px 60px;
+  text-align: center;
+  background: var(--mist);
+}
+
+.collection-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  color: var(--lavender-deep);
+  margin-bottom: 12px;
+}
+
+.collection-hero p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.collection-content {
+  padding: 60px 0 80px;
+}
+
+.collection-content .art-grid {
+  margin-bottom: 40px;
+}
+
+/* ── Landing Pages ───────────────────────────────────────── */
+
+.landing-hero {
+  padding: 120px 24px 60px;
+  text-align: center;
+  background: var(--mist);
+}
+
+.landing-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  color: var(--lavender-deep);
+  margin-bottom: 12px;
+}
+
+.landing-content {
+  padding: 60px 0 80px;
+}
+
+.landing-content h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  color: var(--lavender-deep);
+  margin: 32px 0 16px;
+}
+
+.landing-content p {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  max-width: 780px;
+}
+
+.landing-content ul {
+  margin: 0 0 20px 24px;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .artwork-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .artwork-info .btn {
+    display: block;
+    margin-right: 0;
+  }
+}

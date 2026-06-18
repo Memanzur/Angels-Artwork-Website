@@ -75,17 +75,21 @@
       card.className = 'art-card';
       card.setAttribute('data-category', piece.category);
       var webpSrc = piece.image.replace('.jpg', '.webp');
+      var artSlug = piece.title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/[\s-]+/g, '-').replace(/^-|-$/g, '');
+      var artUrl = '/artwork/' + artSlug + '/';
       card.innerHTML =
         '<div class="art-card-img">' +
+          '<a href="' + artUrl + '">' +
           '<picture>' +
             '<source srcset="' + escapeHtml(webpSrc) + '" type="image/webp">' +
             '<img src="' + escapeHtml(piece.image) + '" alt="' + escapeHtml(piece.title) + ' - original artwork by Kerri Guthrie" width="1200" height="800" loading="lazy">' +
           '</picture>' +
+          '</a>' +
         '</div>' +
         '<div class="art-card-info">' +
-          '<h3>' + escapeHtml(piece.title) + '</h3>' +
+          '<h3><a href="' + artUrl + '">' + escapeHtml(piece.title) + '</a></h3>' +
           '<p>' + escapeHtml(piece.description) + '</p>' +
-          '<a href="' + escapeHtml(piece.purchase_url) + '" target="_blank" rel="noopener" class="btn btn-small">Purchase</a>' +
+          '<a href="' + artUrl + '" class="btn btn-small">View Details</a>' +
         '</div>';
       grid.appendChild(card);
     });
@@ -201,10 +205,11 @@
     var lbClose = lightbox.querySelector('.lightbox-close');
     var lbBuy = lightbox.querySelector('.lightbox-buy');
 
-    document.querySelectorAll('.art-card-img').forEach(function (el) {
-      el.addEventListener('click', function () {
-        var card = el.closest('.art-card');
-        var img = el.querySelector('img');
+    document.querySelectorAll('.art-card-img img').forEach(function (img) {
+      img.addEventListener('click', function (e) {
+        if (img.closest('a')) return;
+        e.preventDefault();
+        var card = img.closest('.art-card');
         var title = card.querySelector('h3');
         var buyLink = card.querySelector('.btn-small');
         lbImg.src = img.src;
