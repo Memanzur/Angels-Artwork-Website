@@ -587,7 +587,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .footer-copy {
   font-size: 0.75rem;
-  color: var(--text-faint);
+  color: var(--text-light);
 }
 
 /* ── Lightbox ──────────────────────────────────────────────── */
