@@ -74,9 +74,13 @@
       var card = document.createElement('div');
       card.className = 'art-card';
       card.setAttribute('data-category', piece.category);
+      var webpSrc = piece.image.replace('.jpg', '.webp');
       card.innerHTML =
         '<div class="art-card-img">' +
-          '<img src="' + escapeHtml(piece.image) + '" alt="' + escapeHtml(piece.title) + ' - original artwork by Kerri Guthrie" width="1200" height="800" loading="lazy">' +
+          '<picture>' +
+            '<source srcset="' + escapeHtml(webpSrc) + '" type="image/webp">' +
+            '<img src="' + escapeHtml(piece.image) + '" alt="' + escapeHtml(piece.title) + ' - original artwork by Kerri Guthrie" width="1200" height="800" loading="lazy">' +
+          '</picture>' +
         '</div>' +
         '<div class="art-card-info">' +
           '<h3>' + escapeHtml(piece.title) + '</h3>' +

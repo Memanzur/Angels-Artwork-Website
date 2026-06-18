@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angel's Artwork | Kerri Guthrie</title>
-  <meta name="description" content="Original angel-themed artwork by Kerri Guthrie. Prints, bookmarks, cards, and more. South Jordan, Utah.">
+  <title>Angel's Artwork | Original Prints by Kerri Guthrie</title>
+  <meta name="description" content="Shop original angel-themed artwork by Kerri Guthrie. Prints, bookmarks, and commissions available. Based in South Jordan, Utah.">
+  <meta name="theme-color" content="#6B4F87">
   <link rel="canonical" href="https://angelsartwork.com/">
+  <link rel="manifest" href="manifest.json">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Angel's Artwork | Kerri Guthrie">
+  <meta property="og:title" content="Angel's Artwork | Original Prints by Kerri Guthrie">
   <meta property="og:description" content="Original angel-themed artwork by Kerri Guthrie. Prints, bookmarks, cards, and more. South Jordan, Utah.">
   <meta property="og:url" content="https://angelsartwork.com/">
   <meta property="og:image" content="https://angelsartwork.com/images/spirit/closer-to-heaven-joyous-reunion.jpg">
@@ -17,7 +19,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Angel's Artwork | Kerri Guthrie">
+  <meta name="twitter:title" content="Angel's Artwork | Original Prints by Kerri Guthrie">
   <meta name="twitter:description" content="Original angel-themed artwork by Kerri Guthrie. Prints, bookmarks, cards, and more.">
   <meta name="twitter:image" content="https://angelsartwork.com/images/spirit/closer-to-heaven-joyous-reunion.jpg">
 
@@ -26,8 +28,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="images/spirit/through-the-veil.jpg">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Quicksand:wght@300;400;500&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="image" href="images/spirit/through-the-veil.webp" type="image/webp">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Structured Data -->
@@ -92,6 +96,8 @@
     </div>
   </nav>
 
+  <main>
+
   <!-- Hero -->
   <header class="hero" id="hero">
     <div class="hero-content">
@@ -111,7 +117,10 @@
     <div class="container">
       <div class="featured-grid">
         <div class="featured-image">
-          <img id="featured-img" src="images/spirit/closer-to-heaven-joyous-reunion.jpg" alt="Closer to Heaven, A Joyous Reunion - original angel artwork by Kerri Guthrie" width="1200" height="800">
+          <picture>
+            <source srcset="images/spirit/closer-to-heaven-joyous-reunion.webp" type="image/webp">
+            <img id="featured-img" src="images/spirit/closer-to-heaven-joyous-reunion.jpg" alt="Closer to Heaven, A Joyous Reunion - original angel artwork by Kerri Guthrie" width="1200" height="800">
+          </picture>
         </div>
         <div class="featured-info">
           <p class="whisper">featured piece</p>
@@ -151,7 +160,10 @@
     <div class="container">
       <div class="about-inner">
         <div class="about-image">
-          <img id="about-img" src="images/angels/ministry-of-angels-brunette-girl.jpg" alt="Ministry of Angels artwork by Kerri Guthrie, South Jordan Utah artist" width="1200" height="794" loading="lazy">
+          <picture>
+            <source srcset="images/angels/ministry-of-angels-brunette-girl.webp" type="image/webp">
+            <img id="about-img" src="images/angels/ministry-of-angels-brunette-girl.jpg" alt="Ministry of Angels artwork by Kerri Guthrie, South Jordan Utah artist" width="1200" height="794" loading="lazy">
+          </picture>
         </div>
         <div class="about-text">
           <p class="whisper">the artist</p>
@@ -199,6 +211,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

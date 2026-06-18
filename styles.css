@@ -5,15 +5,15 @@
 :root {
   --lavender: #C4B1D4;
   --lavender-light: #E8DFF0;
-  --lavender-deep: #8B6FA3;
+  --lavender-deep: #6B4F87;
   --gold: #D4AF6E;
   --gold-light: #E8D5A8;
   --cream: #FDF8F4;
   --mist: #F5F0F8;
   --white: #FFFFFF;
   --text: #4A3F55;
-  --text-light: #7B6F8A;
-  --text-faint: #A99BB8;
+  --text-light: #5E5270;
+  --text-faint: #7B6F8A;
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Quicksand', 'Segoe UI', sans-serif;
 }
@@ -232,7 +232,7 @@ img { max-width: 100%; height: auto; display: block; }
   text-align: center;
   background:
     linear-gradient(170deg, rgba(245,240,248,0.85) 0%, rgba(232,223,240,0.8) 40%, rgba(253,248,244,0.88) 100%),
-    url('images/spirit/through-the-veil.jpg') center/cover no-repeat;
+    url('images/spirit/through-the-veil.webp') center/cover no-repeat;
   overflow: hidden;
 }
 
