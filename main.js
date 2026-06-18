@@ -76,7 +76,7 @@
       card.setAttribute('data-category', piece.category);
       card.innerHTML =
         '<div class="art-card-img">' +
-          '<img src="' + escapeHtml(piece.image) + '" alt="' + escapeHtml(piece.title) + '">' +
+          '<img src="' + escapeHtml(piece.image) + '" alt="' + escapeHtml(piece.title) + ' - original artwork by Kerri Guthrie" width="1200" height="800" loading="lazy">' +
         '</div>' +
         '<div class="art-card-info">' +
           '<h3>' + escapeHtml(piece.title) + '</h3>' +
