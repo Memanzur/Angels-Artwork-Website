@@ -28,7 +28,7 @@
     if (heroSubtitle) heroSubtitle.textContent = site.hero_subtitle;
 
     // Shop links
-    var shopLinks = ['nav-shop-link', 'hero-shop-link', 'collection-shop-link', 'about-shop-link'];
+    var shopLinks = ['nav-shop-link', 'hero-shop-link', 'collection-shop-link', 'about-shop-link', 'footer-shop-link', 'faq-shop-link'];
     shopLinks.forEach(function (id) {
       var el = document.getElementById(id);
       if (el) el.href = site.shop_url;

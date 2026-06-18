@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+Disallow: /admin/
+Disallow: /data/
+Disallow: /art-files/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+
 Sitemap: https://angelsartwork.com/sitemap.xml

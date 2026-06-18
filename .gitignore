@@ -2,3 +2,4 @@
 art-files/
 .gstack/
 *.report.*
+generate_redirects.py

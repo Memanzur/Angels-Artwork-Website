@@ -3,16 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
   <title>Page Not Found | Angel's Artwork</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
   <style>
     body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; font-family: 'Quicksand', sans-serif; color: #4A3F55; background: #FDF8F4; }
-    h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 3rem; color: #8B6FA3; margin-bottom: 8px; }
-    p { font-weight: 300; color: #7B6F8A; margin-bottom: 24px; }
-    a { display: inline-block; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px 36px; border-radius: 50px; background: #8B6FA3; color: #fff; text-decoration: none; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 3rem; color: #6B4F87; margin-bottom: 8px; }
+    p { font-weight: 300; color: #5E5270; margin-bottom: 24px; }
+    a { display: inline-block; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px 36px; border-radius: 50px; background: #6B4F87; color: #fff; text-decoration: none; }
     a:hover { background: #D4AF6E; }
   </style>
+  <script>
+    (function() {
+      var path = window.location.pathname.toLowerCase();
+      var defined = {
+        '/product-category/': '/#collection',
+        '/category/': '/',
+        '/tag/': '/',
+        '/product/': '/#collection',
+        '/page/': '/',
+        '/shop': 'https://kerris-art-kreations.square.site/',
+        '/cart': 'https://kerris-art-kreations.square.site/',
+        '/checkout': 'https://kerris-art-kreations.square.site/',
+        '/wp-admin': '/',
+        '/wp-login': '/',
+        '/wp-content': '/',
+        '/wp-includes': '/',
+        '/index.html': '/'
+      };
+      for (var pattern in defined) {
+        if (path.indexOf(pattern) === 0 || path === pattern) {
+          var target = defined[pattern];
+          if (target.indexOf('http') !== 0) {
+            target = 'https://angelsartwork.com' + target;
+          }
+          window.location.replace(target);
+          return;
+        }
+      }
+    })();
+  </script>
 </head>
 <body>
   <div>

@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://angelsartwork.com/</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://angelsartwork.com/images/spirit/closer-to-heaven-joyous-reunion.jpg</image:loc>
+      <image:title>Closer to Heaven, A Joyous Reunion</image:title>
+      <image:caption>Original angel artwork by Kerri Guthrie depicting a heavenly reunion</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://angelsartwork.com/images/angels/ministry-of-angels-brunette-girl.jpg</image:loc>
+      <image:title>Ministry of Angels</image:title>
+      <image:caption>Girl reading scriptures guarded by angels, by Kerri Guthrie</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://angelsartwork.com/images/angels/ministry-of-angels-boy.jpg</image:loc>
+      <image:title>Ministry of Angels - Boy</image:title>
+      <image:caption>Boy reading scriptures surrounded by guardian angels</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://angelsartwork.com/images/spirit/through-the-veil.jpg</image:loc>
+      <image:title>Through the Veil</image:title>
+      <image:caption>A sacred meeting beyond the veil of this world</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://angelsartwork.com/images/spirit/tree-of-life.jpg</image:loc>
+      <image:title>Tree of Life</image:title>
+      <image:caption>The tree of life rising from divine hands</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://angelsartwork.com/images/spirit/christ-is-my-lighthouse.jpg</image:loc>
+      <image:title>Christ is My Lighthouse</image:title>
+      <image:caption>The Savior as a guiding light through the storm</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://angelsartwork.com/images/spirit/god-bless-america.jpg</image:loc>
+      <image:title>God Bless America</image:title>
+      <image:caption>A heavenly vision of divine blessing over the nation</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://angelsartwork.com/images/angels/family-holding-hands.jpg</image:loc>
+      <image:title>Family Holding Hands</image:title>
+      <image:caption>A family united in faith encircled by guardian angels</image:caption>
+    </image:image>
   </url>
 </urlset>

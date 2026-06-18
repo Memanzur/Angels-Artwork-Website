@@ -565,6 +565,90 @@ img { max-width: 100%; height: auto; display: block; }
   min-height: 120px;
 }
 
+/* ── Skip Link ─────────────────────────────────────────────── */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  background: var(--lavender-deep);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 0 0 8px 8px;
+  font-size: 0.85rem;
+  z-index: 200;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── FAQ ───────────────────────────────────────────────────── */
+
+.faq {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+  background: var(--mist);
+}
+
+.faq-list {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(196,177,212,0.2);
+  padding: 0;
+}
+
+.faq-item summary {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--lavender-deep);
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--lavender-deep);
+  transition: transform 0.3s;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.8;
+  padding: 0 0 20px;
+}
+
+.faq-item a {
+  color: var(--lavender-deep);
+  border-bottom: 1px solid var(--lavender);
+}
+
+.faq-item a:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
 /* ── Footer ────────────────────────────────────────────────── */
 
 .footer {
@@ -583,6 +667,26 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 1.2rem;
   color: var(--lavender-deep);
   margin-bottom: 6px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.footer-nav a {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: var(--lavender-deep);
 }
 
 .footer-copy {
