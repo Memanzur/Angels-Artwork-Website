@@ -694,6 +694,18 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--text-light);
 }
 
+.footer-admin {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.7rem;
+  color: rgba(94, 82, 112, 0.3);
+  transition: color 0.3s;
+}
+
+.footer-admin:hover {
+  color: var(--lavender-deep);
+}
+
 /* ── Lightbox ──────────────────────────────────────────────── */
 
 .lightbox {
