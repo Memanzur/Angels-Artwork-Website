@@ -211,9 +211,15 @@
         <a href="/#faq">FAQ</a>
         <a href="https://kerris-art-kreations.square.site/" target="_blank" rel="noopener">Shop</a>
       </nav>
+      <p class="footer-legal"><a href="/privacy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a></p>
       <p class="footer-copy">&copy; 2026 Kerri Guthrie. All rights reserved. South Jordan, Utah.</p>
     </div>
   </footer>
 
+  <div class="cookie-banner" id="cookie-banner">
+    <p>This site uses third-party fonts that may collect basic usage data. See our <a href="/privacy/">Privacy Policy</a>.</p>
+    <button onclick="document.getElementById('cookie-banner').classList.add('hidden');localStorage.setItem('cookie-consent','1');">Got it</button>
+  </div>
+  <script>if(localStorage.getItem('cookie-consent'))document.getElementById('cookie-banner').classList.add('hidden');</script>
 </body>
 </html>

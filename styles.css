@@ -689,9 +689,77 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--lavender-deep);
 }
 
+.footer-legal {
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+}
+
+.footer-legal a {
+  color: var(--text-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.3s;
+}
+
+.footer-legal a:hover {
+  color: var(--lavender-deep);
+}
+
 .footer-copy {
   font-size: 0.75rem;
   color: var(--text-light);
+}
+
+/* ── Cookie Consent ───────────────────────────────────────── */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--lavender-deep);
+  color: var(--white);
+  padding: 16px 24px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+}
+
+.cookie-banner p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cookie-banner a {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background: var(--gold);
+  color: var(--lavender-deep);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+.cookie-banner button:hover {
+  opacity: 0.9;
+}
+
+.cookie-banner.hidden {
+  display: none;
 }
 
 .footer-admin {
