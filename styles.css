@@ -444,7 +444,15 @@ img { max-width: 100%; height: auto; display: block; }
 
 .art-card-buttons {
   display: flex;
-  gap: 8px;
+  gap: 10px;
+}
+
+.art-card-buttons .btn {
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+  padding: 10px 12px;
+  font-size: 0.7rem;
 }
 
 .art-card-buttons .btn-outline {
@@ -931,6 +939,12 @@ img { max-width: 100%; height: auto; display: block; }
   .btn-small {
     padding: 14px 32px;
     font-size: 0.78rem;
+    min-height: 44px;
+  }
+
+  .art-card-buttons .btn {
+    padding: 12px 8px;
+    font-size: 0.75rem;
     min-height: 44px;
   }
 
