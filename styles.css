@@ -442,6 +442,23 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 16px;
 }
 
+.art-card-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.art-card-buttons .btn-outline {
+  background: transparent;
+  color: var(--lavender-deep);
+  border: 1.5px solid var(--lavender);
+}
+
+.art-card-buttons .btn-outline:hover {
+  background: var(--lavender-deep);
+  color: var(--white);
+  border-color: var(--lavender-deep);
+}
+
 .collection-cta {
   text-align: center;
   margin-top: 56px;

@@ -89,7 +89,10 @@
         '<div class="art-card-info">' +
           '<h3><a href="' + artUrl + '">' + escapeHtml(piece.title) + '</a></h3>' +
           '<p>' + escapeHtml(piece.description) + '</p>' +
-          '<a href="' + artUrl + '" class="btn btn-small">View Details</a>' +
+          '<div class="art-card-buttons">' +
+            '<a href="' + artUrl + '" class="btn btn-small btn-outline">View Details</a>' +
+            '<a href="' + escapeHtml(piece.purchase_url) + '" target="_blank" rel="noopener" class="btn btn-small">Purchase Print</a>' +
+          '</div>' +
         '</div>';
       grid.appendChild(card);
     });
