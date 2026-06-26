@@ -843,6 +843,17 @@ img { max-width: 100%; height: auto; display: block; }
     padding: 7px 16px;
   }
 
+  .btn-small {
+    padding: 14px 32px;
+    font-size: 0.78rem;
+    min-height: 44px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    min-height: 44px;
+  }
+
   .lightbox-img {
     max-height: 55vh;
   }
